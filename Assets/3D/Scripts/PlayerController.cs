@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
             rb.AddForce(Vector3.up * Mathf.Sqrt(-2 * Physics.gravity.y * jumpHeight), ForceMode.Impulse);
         }
 
+        /*
         var colliders = Physics.OverlapSphere(transform.position, 0.6f, colliderLayer);
         foreach (var collider in colliders)
         {
@@ -40,6 +41,7 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(hit.collider.gameObject);
         }
+        */
     }
 
     private void FixedUpdate()
